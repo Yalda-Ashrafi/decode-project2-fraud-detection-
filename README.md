@@ -16,8 +16,21 @@ The second challenge is data leakage. Applying SMOTE or scaling before the train
 ![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/4.png)
 ![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/RF.png)
 
+**Video walkthrough:**
+
+[![Watch the FraudSense AI demo](assets/demo-thumbnail.png)](https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing)
+
 ## Live Demo
-https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing
+
+**[https://fraudsense-ai-yalda.streamlit.app](https://fraudsense-ai-yalda.streamlit.app)**
+
+> **First step: upload the dataset.** The app opens on a "Load a dataset" screen because the source CSV (~144 MB) exceeds GitHub's file limit and is not committed to this repository.
+>
+> 1. Download `creditcard.csv` from [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) (a free Kaggle account is required)
+> 2. Unzip the download
+> 3. Drag `creditcard.csv` into the upload panel on the landing screen
+>
+> Every page — exploratory charts, model comparison, live scoring and batch scoring — becomes available once the file loads. The models themselves are pre-trained and committed, so no training is needed.
 
 ## Features
 
