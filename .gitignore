@@ -1,0 +1,6 @@
+creditcard.csv
+venv/
+__pycache__/
+*.pkl
+*.joblib
+.ipynb_checkpoints/
