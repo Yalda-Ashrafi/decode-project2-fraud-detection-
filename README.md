@@ -30,7 +30,7 @@ The second challenge is data leakage. Applying SMOTE or scaling before the train
 > 2. Unzip the download
 > 3. Drag `creditcard.csv` into the upload panel on the landing screen
 >
-> Every page — exploratory charts, model comparison, live scoring and batch scoring — becomes available once the file loads. The models themselves are pre-trained and committed, so no training is needed.
+> Every page, exploratory charts, model comparison, live scoring and batch scoring,  becomes available once the file loads. The models themselves are pre-trained and committed, so no training is needed.
 
 ## Features
 
