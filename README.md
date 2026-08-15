@@ -16,9 +16,9 @@ The second challenge is data leakage. Applying SMOTE or scaling before the train
 ![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/4.png)
 ![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/RF.png)
 
-**Video walkthrough:**
 
-[![Watch the FraudSense AI demo](assets/demo-thumbnail.png)](https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing)
+**Video walkthrough:** 
+[Watch the demo](https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing)
 
 ## Live Demo
 
