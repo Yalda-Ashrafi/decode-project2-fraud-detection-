@@ -1,4 +1,4 @@
-FraudSense AI
+# FraudSense AI
 
 An interactive fraud detection dashboard built on a leak-free supervised learning pipeline.
 
@@ -12,17 +12,17 @@ The challenge is not simply classification — it is classification under extrem
 
 The second challenge is data leakage. Applying SMOTE or scaling before the train/test split contaminates the test set with information derived from training data, producing scores that look excellent and mean nothing. This project uses imblearn.pipeline.Pipeline so that resampling and scaling are confined to training folds only.
 
-Features
-Interactive dashboard — six sections (Home, Dataset, Pipeline, Models, Prediction, About) with a sticky top navigation bar
-Dataset upload — load the default Kaggle CSV or upload your own transaction file; every page updates automatically
-Exploratory analysis — class distribution, transaction amount profiles, and per-feature correlation with the fraud label
-Pipeline explainer — a visual walkthrough of the four-stage leak-free architecture and what goes wrong without it
-Model comparison — Precision, Recall, F1, ROC-AUC and PR-AUC side by side, with an adjustable decision threshold
-Interactive visualisations — confusion matrices, ROC curves and Precision–Recall curves rendered with Plotly
-Live scoring — push a single transaction through the pipeline and see its fraud probability on a gauge
-Batch scoring — upload a CSV, score every row, review the score distribution, and download annotated results
-Light and dark themes — switchable from the navigation bar
-Tech Stack
+# Features
+Interactive dashboard : six sections (Home, Dataset, Pipeline, Models, Prediction, About) with a sticky top navigation bar
+Dataset upload: load the default Kaggle CSV or upload your own transaction file; every page updates automatically
+Exploratory analysis: class distribution, transaction amount profiles, and per-feature correlation with the fraud label
+Pipeline explainer: a visual walkthrough of the four-stage leak-free architecture and what goes wrong without it
+Model comparison: Precision, Recall, F1, ROC-AUC and PR-AUC side by side, with an adjustable decision threshold
+Interactive visualisations: confusion matrices, ROC curves and Precision–Recall curves rendered with Plotly
+Live scoring: push a single transaction through the pipeline and see its fraud probability on a gauge
+Batch scoring: upload a CSV, score every row, review the score distribution, and download annotated results
+Light and dark themes: switchable from the navigation bar
+# Tech Stack
 Layer	Tools
 Language	Python 3.10+
 Data	pandas, NumPy
@@ -45,7 +45,7 @@ Logistic Regression — linear decision boundary with transparent coefficients a
 
 Random Forest — non-linear ensemble, naturally invariant to feature scale because splits are ordinal. Slower to train, but holds a substantially better precision–recall balance.
 
-Pipeline order
+# Pipeline order
 
 Stratified split — train_test_split(..., stratify=y) runs first, preserving the exact fraud ratio in both partitions
 StandardScaler — fitted on training folds only; also keeps SMOTE's k-nearest-neighbour distances meaningful
@@ -70,7 +70,7 @@ V1–V28 are principal components released in place of the original features for
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 Download creditcard.csv from the link above and place it in the project root.
 
-How to Run
+# How to Run
 
 1. Clone and enter the project
 
@@ -117,7 +117,7 @@ streamlit run app.py
 
 The app opens automatically at http://localhost:8501. If it does not, paste that address into your browser. Keep the terminal open while the app is running; press Ctrl+C to stop it.
 
-Project Structure
+# Project Structure
 fraud-detection/
 ├── creditcard.csv          # dataset (downloaded separately)
 ├── 01_load.py              # data loading and inspection
