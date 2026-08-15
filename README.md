@@ -12,7 +12,9 @@ The challenge is not simply classification. It is classification under extreme c
 
 The second challenge is data leakage. Applying SMOTE or scaling before the train/test split contaminates the test set with information derived from training data, producing scores that look excellent and mean nothing. This project uses `imblearn.pipeline.Pipeline` so that resampling and scaling are confined to training folds only.
 ## 📊 Project Overview
-![image alt]()
+![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/1.png)
+![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/4.png)
+![image alt](https://github.com/Yalda-Ashrafi/decode-project2-fraud-detection-/blob/6ba880410cf1dd8f9d8fa601d8291158184b2b57/assets/RF.png)
 
 ## Live Demo
 https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing
