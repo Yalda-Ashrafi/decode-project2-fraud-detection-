@@ -11,6 +11,11 @@ This project was built as **Project 2 — Supervised Learning (Fraud Detection P
 The challenge is not simply classification. It is classification under extreme class imbalance. A model that labels every transaction as legitimate achieves 99.83% accuracy while catching zero fraud. FraudSense AI therefore discards accuracy entirely and is evaluated on Precision, Recall, F1, ROC-AUC and PR-AUC.
 
 The second challenge is data leakage. Applying SMOTE or scaling before the train/test split contaminates the test set with information derived from training data, producing scores that look excellent and mean nothing. This project uses `imblearn.pipeline.Pipeline` so that resampling and scaling are confined to training folds only.
+## 📊 Project Overview
+![image alt]()
+
+## Live Demo
+https://drive.google.com/file/d/1mdD4q48B7wpNhgf67xsgeZT8Mq_vJmcH/view?usp=sharing
 
 ## Features
 
