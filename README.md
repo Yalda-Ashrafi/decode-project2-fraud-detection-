@@ -15,16 +15,17 @@ The challenge is not simply classification — it is classification under extrem
 The second challenge is data leakage. Applying SMOTE or scaling before the train/test split contaminates the test set with information derived from training data, producing scores that look excellent and mean nothing. This project uses imblearn.pipeline.Pipeline so that resampling and scaling are confined to training folds only.
 
 # ✨ Features
-Interactive dashboard — six sections (Home, Dataset, Pipeline, Models, Prediction, About) with a sticky top navigation bar
-Dataset upload — load the default Kaggle CSV or upload your own transaction file; every page updates automatically
-Exploratory analysis — class distribution, transaction amount profiles, and per-feature correlation with the fraud label
-Pipeline explainer — a visual walkthrough of the four-stage leak-free architecture and what goes wrong without it
-Model comparison — Precision, Recall, F1, ROC-AUC and PR-AUC side by side, with an adjustable decision threshold
-Interactive visualisations — confusion matrices, ROC curves and Precision–Recall curves rendered with Plotly
-Live scoring — push a single transaction through the pipeline and see its fraud probability on a gauge
-Batch scoring — upload a CSV, score every row, review the score distribution, and download annotated results
-Light and dark themes — switchable from the navigation bar
-🧰 Tech Stack
+#### Interactive dashboard:  six sections (Home, Dataset, Pipeline, Models, Prediction, About) with a sticky top navigation bar
+#### Dataset upload: load the default Kaggle CSV or upload your own transaction file; every page updates automatically
+#### Exploratory analysis: class distribution, transaction amount profiles, and per-feature correlation with the fraud label
+#### Pipeline explainer: a visual walkthrough of the four-stage leak-free architecture and what goes wrong without it
+#### Model comparison: Precision, Recall, F1, ROC-AUC and PR-AUC side by side, with an adjustable decision threshold
+#### Interactive visualisations:confusion matrices, ROC curves and Precision–Recall curves rendered with Plotly
+#### Live scoring: push a single transaction through the pipeline and see its fraud probability on a gauge
+#### Batch scoring: upload a CSV, score every row, review the score distribution, and download annotated results
+#### Light and dark themes: switchable from the navigation bar
+
+# 🧰 Tech Stack
 Layer	Tools
 Language	Python 3.10+
 Data	pandas, NumPy
@@ -32,7 +33,7 @@ Machine learning	scikit-learn, imbalanced-learn
 Visualisation	Plotly, Matplotlib, Seaborn
 Interface	Streamlit
 Persistence	joblib
-🧠 Models
+# 🧠 Models
 
 Both models are wrapped in an imblearn pipeline so that scaling and SMOTE run inside each cross-validation fold rather than on the full dataset.
 
@@ -45,9 +46,9 @@ Pipeline([
     ("classifier", LogisticRegression(max_iter=1000))   # or RandomForestClassifier()
 ])
 
-Logistic Regression — linear decision boundary with transparent coefficients and fast training. Requires scaling: regularisation penalties are distorted by the large variance in transaction amounts. Tends toward high recall with low precision on this dataset.
+#### Logistic Regression — linear decision boundary with transparent coefficients and fast training. Requires scaling: regularisation penalties are distorted by the large variance in transaction amounts. Tends toward high recall with low precision on this dataset.
 
-Random Forest — non-linear ensemble, naturally invariant to feature scale because splits are ordinal. Slower to train, but holds a substantially better precision–recall balance.
+#### Random Forest — non-linear ensemble, naturally invariant to feature scale because splits are ordinal. Slower to train, but holds a substantially better precision–recall balance.
 
 ### Pipeline order
 Step	Stage	Why it lives here
